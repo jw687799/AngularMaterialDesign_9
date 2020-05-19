@@ -43,27 +43,34 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 10) npm install jest jest-preset-angular -D  ==> this is for SNAPSHOT testing. (did not implement this one, jest.config.js)
 
 
-TESTING:
-1) unit testing 
-1.1 cmd 'ng test' 
-1.2 how to debug karma testing
+## TESTING:
+### 1. unit testing 
+
+#### 1.1 cmd 'ng test' 
+
+#### 1.2 how to debug karma testing
+
 'ng test' start the server -> chrome browser-> karma debug runner ( the cmd will do all these in one step)
+
 ->click on Debug button->F12->Source tab->Ctrl + P  find the file->put a breakpoint 
+
 -> F10 step over  ->watch
                   ->call stack
 -> F11 step into
 
-2) e2e testing
-2.1 'ng e2e'
+### 2 e2e testing
+
+#### 2.1 'ng e2e'
 running it, it complain about chrome driver version.
+
 then do, `webdriver-manager clean`, `webdriver-manager update --versions.chrome 81.0.4044.138`, this version is my browser version,
 still does not work.
 
-2.2 have to do following to correct this issue:
+#### 2.2 have to do following to correct this issue:
 npm uninstall protractor
 npm install --save-dev protractor
 
-2.3 how to put a debug point
+#### 2.3 how to put a debug point
 in code, add "browser.debugger()" or "debugger". I personally like "debugger" better
 
 
