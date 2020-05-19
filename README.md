@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+##Initial setup the project cmd
+1) install node.js
+2) install @angular/CLI
+3) ng install --save @angular/material
+4) ng install --save @angular/cdk
+5) ng install --save @angular/animations
+6) ng install --save @angular/material-moment-adapter
+7) ng install --save moment
+
